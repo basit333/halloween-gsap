@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Halloween Images -->
+  <section class="halloween">
+    <img src="/images/bg.jpg" alt="bg-img" class="haloween-bg-img" id="bg-img">
+    <img src="/images/bats.png" alt="bats" class="halloween-bats" id="bats">
+    <img src="/images/castle.png" alt="" class="halloween-castle" id="castle">
+    <img src="/images/img.png" alt="" class="halloween-witch" id="witch">
+    <img src="/images/wolf.png" alt="" class="halloween-wolf" id="wolf">
+  </section>
+
+  <!-- Halloween Content  -->
+  <section class="halloween-showcase">
+    <div class="halloween-content">
+      <h2 class="halloween-heading">Halloween</h2>
+      <p class="halloween-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor, consequuntur
+        consequatur, odio commodi
+        cumque a beatae saepe veritatis aliquid vitae suscipit cupiditate impedit porro accusamus est. At iusto veniam
+        animi commodi omnis molestiae, labore obcaecati, aspernatur quaerat eos delectus, deleniti rem quia accusantium
+        doloremque voluptates. Vitae voluptates rerum beatae rem minima corrupti perferendis minus. Maxime molestias
+        accusantium asperiores illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, eius voluptatibus?
+        Quasi asperiores corrupti perferendis atque amet maxime architecto. Iusto cupiditate assumenda omnis qui
+        eveniet,
+        quisquam sed quo minus animi fugiat minima. Aperiam libero vel commodi similique nulla nisi consequuntur,
+        exercitationem quod dolorem doloremque expedita obcaecati, animi quidem! Sint dolores dolorum eligendi repellat
+        recusandae doloremque eaque, est quam quo. Dolorum magni molestias rerum modi eum vitae dolorem, a quidem
+        aliquid
+        excepturi amet atque dolor pariatur nulla nostrum odio facilis tempore tempora natus libero nemo voluptate quam
+        suscipit dolore. Maxime molestias mollitia consequatur minus obcaecati illum esse repellat delectus voluptatem
+        ea?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat deleniti dolorem ipsum voluptatibus veniam sit
+        quia voluptate officiis beatae, autem minima doloribus. Fuga non aliquid provident distinctio molestiae facere
+        accusamus voluptatibus earum architecto illo! Ex in natus deserunt autem maxime quis odio id eum, recusandae,
+        nam
+        nisi, suscipit placeat nihil sed dolorum. Eius sunt nesciunt impedit, cumque sit distinctio quibusdam vitae
+        deserunt laboriosam. Suscipit corrupti amet sed mollitia maxime laborum culpa, sint beatae, voluptatibus totam
+        optio pariatur obcaecati quisquam laudantium neque. Necessitatibus laudantium doloribus nobis aliquid. Sit ipsum
+        nihil voluptatem velit et, id consequatur facere excepturi similique autem architecto ab.
+      </p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.to('#witch', {
+      scrollTrigger: {
+        scrub: 3,
+      },
+      x: 500,
+      y: 100,
+    })
+
+    gsap.to('#castle', {
+      scrollTrigger: {
+        scrub: 3,
+      },
+      y: 200,
+    })
+
+    gsap.to('#bats', {
+      scrollTrigger: {
+        scrub: 2,
+      },
+      y: 100,
+    })
+
+    gsap.from('#wolf', {
+      scrollTrigger: {
+        scrub: 3,
+      },
+      x: -50,
+      y: -100,
+    })
+  </script>
+</body>
+
+</html>
